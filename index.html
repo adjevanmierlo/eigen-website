@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link naar mijn css -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- link naar animatie -->
+    <link rel="stylesheet" href="css/animatie.css">
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:700|Oswald" rel="stylesheet" />
+    <!-- jquery link -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+     <!-- javascript link -->
+    <script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>landings page</title>
+</head>
+<body>
+    <div onscroll="pixelsscrolled()" class="horizontal-scroll-area">
+        <div class="item1">
+   <!-- navigatie menu -->
+            <div class="index-container">
+                    <div class="nav">
+                        <div class="navbar">
+                            <ul  id="nav" class="hide">
+                                <li><a id="a1" class="link" href="index.html">Home</a></li>
+                                <li><a id="a2" class="link" href="#two">About</a></li>
+                                <li><a id="a3" class="link" href="#three">Project's</a></li>
+                                <li><a id="a4" class="link" href="#four">Contact</a></li>
+                            </ul>
+                            <div id="change-hamburger" class="hamburger-menu-icon" onclick="myFunction();"></div>
+                        </div> <!-- navbar -->
+                    </div> <!-- nav -->
+                    <div class="index-text-container">
+                        <div>
+                            <div class="text">
+                                <h1 class="text-focus-in">
+                                <span style="color:white">design &</span> build
+                                </h1>
+                                <h2 class="text-focus-in">
+                                <span style="color:white">websites</span>
+                                <span style="color:#018001">&</span> applications
+                                </h2>
+                            </div> <!-- text -->
+                        </div> <!-- lege div -->
+                    </div> <!-- index-text-container -->
+            </div>
+<a href="#two" ><img id="js-arrow" class="index-arrow"  src="img/arrow.png"/></a>
+        </div>
+        <div class="box2">
+        <div id="box">
+                <div class="item2" id="two">
+                    <div class="about-koptekst">
+                        <h1>About me</h1>
+                        <div class="photo"></div>
+                    </div>
+                    <div class="quote"><em><q>Al snel wist ik,<br>dit is wat ik wil!</q></em><span class="fa">&#xf103;</span></div>
+                    <div class="about-me">
+                    Vanwege mijn interesse naar development ben ik een opleiding gaan volgen bij CodeGorilla.
+                    door mijn enorme drive haal ik zoveel energie en plezier uit wat ik doe dat ik al snel wist, dat dit is wat ik wil.
+                    het voelt niet meer als werken het is een levensstijl geworden en eerlijk gezegd wie wil er nu niet van zijn hobby zijn werk maken.
+                    Heeft u vragen aarzel niet en neem contact op wellicht kan ik iets voor u betekenen.
+                    Of misschien nog wel beter heeft u die toffe baan voor me.<span class="fa">&#xf102;</span>
+                    </div>
+                        <div class="about-service-container">
+                            <div class="service-border">
+                                <div class="about-icons">
+                                    <div class="about-skills">
+                                        <img src="img/design-skills.png">
+                                        <p>HTML</p>
+                                        <p>CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>PHP</p>
+                                        <!-- JQuery</p> -->
+                                        <p>bootstrap</p>
+                                        <p>SQL</p>
+                                    </div>
+                                <div class="about-skills">
+                                    <img src="img/social-skills.png">
+                                    <p>Github</p>
+                                    <p>Agile Scrum</p>
+                                    <p>Team-work</p>
+                                    <p>Leergierig</p>
+                                    <p>Oplossingsgericht</p>
+                                </div>
+                                <div class="about-skills">
+                                    <img src="img/motor.png">
+                                    <p>Motor</p>
+                                    <p>Gezin</p>
+                                    <p>Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+                </div>
+                <div class="box3">
+                        <div id="box3">
+                <div class="item3" id="three"> 
+                        <div class="tekst-vak-project">
+                                <div class="ervaring">
+                                   <h1>Ervaring</h1>
+                                </div>
+                                <div class="projecten">
+                                    <h2>Projecten</h2>
+                                </div>
+                        </div>
+                    <div class="opleiding">
+                            <p>CodeGorilla</p>
+                            <small>
+                                2018/2019<br>
+                                bootcamp tot full stack developer
+                            </small>
+                            <p>LOI</p>
+                            <small>
+                                    1996/1997<br>
+                                    Bassis kennis boekhouden (pkb)<br>
+                                    Praktijk diploma boekhouden (pdb)
+                            </small>
+                            <p>Hbo</p>
+                            <small>
+                                    Newman college<br>
+                                    1992/1996<br>
+                                   opleiding richting administratie
+                            </small>
+                    </div>
+                        <div class="project-knopje">
+                            <img src="img/project-button.png"  onclick="changeProject()">
+                        </div>
+                        <div class="project-vlak" id="img">
+                            <img id="foto" class="project-vlak" src="img/pr1.png" />
+                            <div id="tekst" class="after">
+                                <h4>1e project</h4>
+                                Dit is mijn eerste project die ik gemaakt heb tijdens
+                                de Hackaton van CodeGorilla te breda.<br>
+                                De opdracht was om statushouders makkelijker te laten opnemen in de samenleving.<br>
+                                Voor deze opdracht dacht ik om de eenzame ouderen erbij te betrekken zodat niet<br>
+                                enkel de statushouders geholpen worden maar ook gelijk de eenzame ouderen.<br>
+                                Het concept was dat statushouders in contact konden komen met de ouderen zodat
+                                ze iets leren over de geschiedenis van Nederland, ook kunnen ze<br>
+                                gezamelijk een boodschap doen of een uitje zodat ze social naar elkaar toe getrokken worden.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box4">
+                        <div id="box4">
+                <div class="item4" id="four">
+                    <div class="contact-vak">
+                        <div class="contact-koptekst">
+                            <div class="contact-informatie-links">
+                                <h1>Github<span style="color:#018001">&</span>LinkedIn</h1>
+                            </div>
+                            <div class="contact-informatie-rechts">
+                                    <h1>Contact</h1>
+                                </div>
+                        </div>
+
+                        <div class="contact-information">
+                           
+                        </div>
+                    </div>
+                    <div class="github-linkin-links">
+                            <img src="img/linkedin.png" alt="geen afbeelding beschikbaar">
+                            <br>
+                            <a href="https://www.linkedin.com/in/adje-van-mierlo" target="_blank">www.linkedin.com/in/adje-van-mierlo</a>
+                    </div>
+                            <div class="github-linkin-rechts">
+                                <img src="img/github.png" alt="geen afbeelding beschikbaar">
+                                <br>
+                                <a href="https://github.com/adjevanmierlo" target="_blank">https://github.com/adjevanmierlo</a>
+                                 </div>
+                                <div class="contact-gegevens">
+                                    <p>Adje van Mierlo<br>
+                                    Immenhof 16<br>
+                                    4847SR<br>
+                                    Teteringen<br>
+                                    06-43275140<br>
+                                    <a class="email" href="mailto:a.vanmierlo@ziggo.nl">a.vanmierlo@ziggo.nl</a></p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+                <div class="item">9</div>
+                <div class="item">10</div> -->
+</div>
+ 
+</body>
+</html>
