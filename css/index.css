@@ -259,6 +259,38 @@ ul {
     align-items: space-around;
 }
 
+.javascript-lib img{
+width: 16px;
+height: 16px;
+transform: rotate(90deg);
+margin: 0;
+padding: 0;
+}
+
+.javascript-lib{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.javascript-lib:hover{
+  color: #018001;
+}
+
+.javascript-lib:hover .libaries{
+  display: block;
+}
+
+.javascript-lib .libaries{
+  transform: rotate(-90deg);
+  display: none;
+}
+
+.javascript-lib .libaries img{
+  width: 32px;
+  height: 32px;
+}
+
 .about-skills p{
   margin: 4;
   font-family: 'EB Garamond', serif;
