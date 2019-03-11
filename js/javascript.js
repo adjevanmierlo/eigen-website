@@ -115,7 +115,7 @@ function showpage(){
         document.getElementById("a2").style.color = "black";
         document.getElementById("a3").style.color = "black";
         document.getElementById("a4").style.color = "black";
-        document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-wit.png)"; // specify the image path here
+        document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-wit.png)"; 
       }
 
        // functie om denavigatie onscroll te laten veranderen
@@ -124,7 +124,7 @@ function showpage(){
         document.getElementById("a2").style.color = "white";
         document.getElementById("a3").style.color = "white";
         document.getElementById("a4").style.color = "white";
-        document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-zwart.png)"; // specify the image path here
+        document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-zwart.png)"; 
       }
 
 // stel de index vast 
@@ -184,7 +184,7 @@ var index = 0;
 function changeProject(){ 
   var array=["img/pr1.png", "img/pr2.png", "img/pr3.png", "img/pr4.png", "img/pr5.png", "img/pr6.png", "img/pr7.png"]; // array met mijn project image's 
   document.getElementById('img');
-  var textArray = ["after", "asoijd asoidas", "saoijsadoiasd", "aosidjsad", "asadahsoidaom",  "oasidbsiduhad", "iuahsdhu"];
+  var textArray=["test1", "test2", "test3", "test4", "test5",  "test6", "test7"];
   document.getElementById('tekst');
   index++;
   if(index > array.length-1){
