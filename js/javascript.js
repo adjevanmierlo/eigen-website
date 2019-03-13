@@ -183,7 +183,6 @@ var index = 0;
 // javascript imageslider */
 function changeProject(){ 
   var array=["img/pr1.png", "img/pr2.png", "img/pr3.png", "img/pr4.png", "img/pr5.png", "img/pr6.png", "img/pr7.png"]; // array met mijn project image's 
-  //document.getElementById('img');
   var textArray=[
     "<h4>1e project</h4> Dit is mijn eerste project welke ik gemaakt heb tijdens de Hackaton van CodeGorilla te breda.<br> De opdracht was om statushouders makkelijker te laten opnemen in de samenleving.<br>Voor deze opdracht dacht ik om de eenzame ouderen erbij te betrekken zodat niet<br> enkel de statushouders geholpen worden maar ook gelijk de eenzame ouderen.<br>Het concept was dat statushouders in contact konden komen met de ouderen zodatze iets leren over de geschiedenis van Nederland, ook kunnen ze<br>gezamelijk een boodschap doen of een uitje zodat ze social naar elkaar toe getrokken worden.<br>", 
     "<h4>2e project</h4> Dit is mijn tweede project welke ik gemaakt heb tijdens de bootcamp van CodeGorilla te breda.<br> De opdracht was om een portfolio te maken waarop je kunt laten zien wat je tot nu toe geleerd hebt tijdens de thuisstudie.<br>Er moest gebruik worden gemaakt van een grid en omdat ik de projecten wou gebruiken die ik laat zien heb ik deze in een iframe gestopt.<br>Ik heb gekozen voor grijstinten om het rustig te houden en besloten om een clean en overzichtelijk portfolio te maken.<br>",
