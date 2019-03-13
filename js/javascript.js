@@ -183,9 +183,16 @@ var index = 0;
 // javascript imageslider */
 function changeProject(){ 
   var array=["img/pr1.png", "img/pr2.png", "img/pr3.png", "img/pr4.png", "img/pr5.png", "img/pr6.png", "img/pr7.png"]; // array met mijn project image's 
-  document.getElementById('img');
-  var textArray=["test1", "test2", "test3", "test4", "test5",  "test6", "test7"];
-  document.getElementById('tekst');
+  //document.getElementById('img');
+  var textArray=[
+    "<h4>1e project</h4> Dit is mijn eerste project welke ik gemaakt heb tijdens de Hackaton van CodeGorilla te breda.<br> De opdracht was om statushouders makkelijker te laten opnemen in de samenleving.<br>Voor deze opdracht dacht ik om de eenzame ouderen erbij te betrekken zodat niet<br> enkel de statushouders geholpen worden maar ook gelijk de eenzame ouderen.<br>Het concept was dat statushouders in contact konden komen met de ouderen zodatze iets leren over de geschiedenis van Nederland, ook kunnen ze<br>gezamelijk een boodschap doen of een uitje zodat ze social naar elkaar toe getrokken worden.<br>", 
+    "<h4>2e project</h4> Dit is mijn tweede project welke ik gemaakt heb tijdens de bootcamp van CodeGorilla te breda.<br> De opdracht was om een portfolio te maken waarop je kunt laten zien wat je tot nu toe geleerd hebt tijdens de thuisstudie.<br>Er moest gebruik worden gemaakt van een grid en omdat ik de projecten wou gebruiken die ik laat zien heb ik deze in een iframe gestopt.<br>Ik heb gekozen voor grijstinten om het rustig te houden en besloten om een clean en overzichtelijk portfolio te maken.<br>",
+    "<h4>3e project</h4> Dit is mijn derde project welke ik gemaakt heb tijdens de bootcamp van CodeGorilla te breda.<br> De opdracht was om een webshop maken en hierbij gebruik te maken van php zodat de pruducten dynamisch ingeladen kunnen worden.<br>Ook heb ik gebruikt gemaakt van bootstrap en heb ik er voor gezorgd dat er middels php gefilterd kan worden.<br>",
+    "<h4>4e project</h4> Dit is mijn vierde project welke ik gemaakt heb tijdens de bootcamp van CodeGorilla te breda.<br> De opdracht was om een webshop maken en hierbij gebruik te maken van php zodat de pruducten dynamisch ingeladen kunnen worden.<br>Ook heb ik gebruikt gemaakt van horizontalscroll en heb ik er voor gezorgd dat er middels php gefilterd kan worden, je producten kon plaatsen in een winkelwagen welke automatisch geupdate word.<br>", 
+    "<h4>5e project</h4> Dit is mijn vijfde project welke ik gemaakt heb tijdens de bootcamp van CodeGorilla te breda.<br> De opdracht was om genruik te maken van bootstrap en een api.<br>Ik heb gekozen om een website te maken die een cruise verkoopt en voor de api heb ik gebruikt van een weather api.<br>Deze heb ik middels een mooi product (weerkaartje) kunnen weergeven.<br>", 
+    "<h4 align=left>6e project</h4><p align=left> Dit is mijn zesde project <br> welke ik gemaakt heb tijdens <br> de bootcamp van CodeGorilla <br> te breda.<br> De opdracht was om een pwa <br> te maken. <br> Ik heb er voor gekozen om <br> voor mijn dochter een pwa <br> te maken waarmee een- <br> voudige sommetjes <br> en woordjes kon leren.</p>", 
+    "<h4 align=left>7e project</h4><p align=left> Dit is mijn zevende <br> project welke ik ge- <br> maakt heb tijdens de <br> bootcamp van Code- <br> Gorilla te breda.<br> De opdracht was om <br> in een groep een zelf <br> gekozen idee te ma- <br> ken.Wij hebben geko- <br> zen om een app te <br> maken tegen voedel <br> verspilling.</p>", ];
+
   index++;
   if(index > array.length-1){
     // console.log(array.length)
@@ -194,15 +201,14 @@ function changeProject(){
   document.getElementById("img").classList.remove("scale-in-project");
   setTimeout(function() {  // functie om 2 animatie tegelijk te laten uitvoeren 
     document.getElementById('foto').src = array[index];
+    document.getElementById('tekst').innerHTML = textArray[index];
+    // document.getElementById('tekst').setAttribute("style","width:43%");
     document.getElementById("img").classList.add("scale-in-project");
   }, 100);  // het aantal seconden voordat project2 tevoorschijn komt 
-}
-
-
-
-
-// verander innerHTML van element.
-
-// naar => 
-
-
+  if (index === 5){
+    document.getElementById('tekst').setAttribute("style","width:57.3%");
+  }else if (index === 6){
+   document.getElementById('tekst').setAttribute("style","width:43%");
+  } else
+    document.getElementById('tekst').setAttribute("style","width:100%");
+  };
