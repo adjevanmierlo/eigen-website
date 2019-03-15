@@ -17,6 +17,7 @@ var faceIsVisable1 = false;
 var faceIsVisable2 = false;
 var changenavcolor = false;
 var changenavcolor2 = false;
+var changenavcolor3 = false;
 
 function pixelsscrolled(){
   var scrollPixels = $(".horizontal-scroll-area").scrollLeft()
@@ -212,3 +213,104 @@ function changeProject(){
   } else
     document.getElementById('tekst').setAttribute("style","width:100%");
   };
+
+
+  if (matchMedia('only screen and (max-width: 1024px)').matches) {
+    function pixelsscrolled(){
+      var scrollPixels = $(".horizontal-scroll-area").scrollLeft()
+       console.log(scrollPixels);
+       if ( scrollPixels > 100 && faceIsVisable === false) { // if pixels groter dan 100 
+          showpage(); // hier voer ik de functie showpage uit
+          faceIsVisable = true;
+       } else if ( scrollPixels < 100 && faceIsVisable === true) { // if pixels groter dan 100 
+        hidePage(); // hier voer ik de functie showpage uit
+        faceIsVisable = false;
+       }
+       if ( scrollPixels > 1180 && faceIsVisable1 === false) { // if pixels groter dan 100 
+        showpage2(); // hier voer ik de functie showpage uit
+        faceIsVisable1 = true;
+      } else if ( scrollPixels < 1180 && faceIsVisable1 === true) { // if pixels groter dan 100 
+      hidePage2(); // hier voer ik de functie showpage uit
+      faceIsVisable1 = false;
+      }
+      if ( scrollPixels > 3300 && faceIsVisable2 === false) { // if pixels groter dan 100 
+        showpage3(); // hier voer ik de functie showpage uit
+        faceIsVisable2 = true;
+      } else if ( scrollPixels < 3300 && faceIsVisable2 === true) { // if pixels groter dan 100 
+      hidePage3(); // hier voer ik de functie showpage uit
+      faceIsVisable2 = false;
+      }
+      if ( scrollPixels > 106 && changenavcolor === false) { // if pixels groter dan 100 
+        changenavblack(); // hier voer ik de functie showpage uit
+        changenavcolor = true;
+      } else if ( scrollPixels < 885 && changenavcolor === true) { // if pixels groter dan 100 
+        changenavwhite(); // hier voer ik de functie showpage uit
+      changenavcolor = false;
+      }if ( scrollPixels > 1100 && changenavcolor2 === false) { // if pixels groter dan 100 
+        changenavblack2(); // hier voer ik de functie showpage uit
+        changenavcolor2 = true;
+      } else if ( scrollPixels < 2040 && changenavcolor2 === true) { // if pixels groter dan 100 
+        changenavwhite2(); // hier voer ik de functie showpage uit
+      changenavcolor2 = false;
+      }
+      if ( scrollPixels > 2139 && changenavcolor3 === false) { // if pixels groter dan 100 
+        changenavblack3(); // hier voer ik de functie showpage uit
+        changenavcolor3 = true;
+      } else if ( scrollPixels < 3074 && changenavcolor3 === true) { // if pixels groter dan 100 
+        changenavwhite3(); // hier voer ik de functie showpage uit
+      changenavcolor3 = false;
+      }
+    };
+
+    function changenavblack(){
+      document.getElementById("a1").style.color = "black";
+      document.getElementById("a2").style.color = "black";
+      document.getElementById("a3").style.color = "black";
+      document.getElementById("a4").style.color = "black";
+      document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-zwart.png)"; // specify the image path here
+    }
+
+     // functie om denavigatie onscroll te laten veranderen
+    function changenavwhite(){
+      document.getElementById("a1").style.color = "white";
+      document.getElementById("a2").style.color = "white";
+      document.getElementById("a3").style.color = "white";
+      document.getElementById("a4").style.color = "white";
+      document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-wit.png)"; // specify the image path here
+    }
+
+     // functie om denavigatie onscroll te laten veranderen
+    function changenavblack2(){
+      document.getElementById("a1").style.color = "white";
+      document.getElementById("a2").style.color = "white";
+      document.getElementById("a3").style.color = "white";
+      document.getElementById("a4").style.color = "white";
+      document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-wit.png)"; 
+    }
+
+     // functie om denavigatie onscroll te laten veranderen
+    function changenavwhite2(){
+      document.getElementById("a1").style.color = "black";
+      document.getElementById("a2").style.color = "black";
+      document.getElementById("a3").style.color = "black";
+      document.getElementById("a4").style.color = "black";
+      document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-zwart.png)"; 
+  }
+  function changenavblack3(){
+    document.getElementById("a1").style.color = "black";
+    document.getElementById("a2").style.color = "black";
+    document.getElementById("a3").style.color = "black";
+    document.getElementById("a4").style.color = "black";
+    document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-zwart.png)"; 
+  }
+
+   // functie om denavigatie onscroll te laten veranderen
+  function changenavwhite3(){
+    document.getElementById("a1").style.color = "white";
+    document.getElementById("a2").style.color = "white";
+    document.getElementById("a3").style.color = "white";
+    document.getElementById("a4").style.color = "white";
+    document.getElementById('change-hamburger').style.backgroundImage="url(img/menu-wit.png)"; 
+
+}
+  }

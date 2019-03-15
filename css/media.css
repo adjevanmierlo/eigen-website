@@ -137,7 +137,7 @@
     transform: rotate(-45deg);
     position: relative;
     top: -30;
-    right: -570;
+    right: -450;
     margin: 0;
   }
 
@@ -150,7 +150,7 @@
     transform: rotate( 135deg);
     position: relative;
     bottom: -70;
-    left: 500;
+    left: 400;
     margin: 0;
   }
 
@@ -160,10 +160,13 @@
     font-weight: 700;
     font-size: 30px;
     color: white;
-    left: -460;
+    left: 100;
     top: 300;
     z-index: 999999;
     width: 250px;
     letter-spacing: 0.1rem;
   }
+
+  .contact-gegevens{
+    position: absolute;  }
 }
